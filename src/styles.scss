@@ -1,0 +1,121 @@
+@import "./sass/vendors/bootstrap.scss";
+
+@import "./sass/abstracts/mixins";
+@import "./sass/abstracts/variables";
+@import "./sass/abstracts/helpers";
+
+@import "./sass/base/base";
+@import "./sass/base/typography";
+
+@import "./sass/components/buttons";
+
+@import "./sass/layout/footer";
+@import "./sass/layout/sections";
+
+@import "./sass/sections/about";
+@import "./sass/sections/contact";
+@import "./sass/sections/hero";
+@import "./sass/sections/projects";
+
+
+.snowflake {
+    position: fixed;
+    top: -10px;
+    font-size: 25px;
+    color: white;
+    animation: snowfall 10s linear infinite;
+    pointer-events: none;
+    z-index: 15;
+  }
+  
+  @keyframes snowfall {
+    0% {
+      transform: translateY(-10px) rotate(0deg);
+      opacity: 1;
+    }
+    100% {
+      transform: translateY(calc(100vh + 10px)) rotate(360deg);
+      opacity: 0;
+    }
+  }
+
+  #header {
+    position: fixed;
+    height: 80px;
+    width: 100%;
+    z-index: 10;
+    background-color: #111;
+  }
+  
+  #header h1 {
+    position:absolute;
+    margin: 0;
+    top: 20px;
+    color: white;
+    font-family: cursive;
+    left: 6%;
+  }
+  
+  #header .list {
+    margin: 0;
+    position: relative;
+    color: white;
+    text-align: center;
+    top: 35%;
+  }
+  
+  #header li {
+    display: inline;
+    margin-right: 6%;
+    position: relative;
+    transition: transform 0.5s ease;
+  }
+  
+  #header li::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: -2px;
+    width: 100%;
+    height: 2px;
+    background-color: white;
+    transform: scaleX(0);
+    transform-origin: center;
+    transition: transform 0.5s ease;
+  }
+  #header a{
+    text-decoration: none;
+    color:white;
+  }
+  #header li:hover::after {
+    transform: scaleX(1);
+  }
+  /* Your existing header styles... */
+
+@media screen and (max-width: 767px) {
+    /* Styles for phone mode */
+    #header .list {
+      display: flex;
+      justify-content: center;
+    }
+  
+    #header li {
+      display: inline-block;
+      margin-right: 0.5rem; /* Adjust the spacing between the dots */
+    }
+  
+    #header li:last-child {
+      margin-right: 0; /* Remove spacing for the last dot */
+    }
+  
+    #header li::after {
+      content: '.';
+      background-color: transparent;
+      color: white;
+      font-size: 2rem;
+    }
+  
+    #header li:hover::after {
+      transform: scaleX(1);
+    }
+  }

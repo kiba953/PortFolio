@@ -1,0 +1,383 @@
+<!--
+  Hello!
+  -
+  Simplefolio is a clean and responsive portfolio template for Developers!
+  Created by Jacobo Martinez.
+  -
+  Github Repo: https://github.com/cobiwave/simplefolio/
+  Readme: https://github.com/cobiwave/simplefolio/README.md
+  -
+  For business & inquires, contact me -> jacobojavier98@gmail.com
+-->
+<!DOCTYPE html>
+<html lang="en" class="sr">
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="shortcut icon" type="image/png" href="assets/favicon.png" />
+    
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+
+    <!-- Todo: put here your site title -->
+    <title>[Your name here] | Developer</title>
+    <!-- Todo: add some coding keywords below - e.g: (javascript, yourusername, etc) -->
+    <meta name="keywords" content="[username], [name], skill" />
+    <!-- Todo: improve your SEO by adding a small description of you -->
+    <meta name="description" content="[Your name here] | Developer" />
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <link rel="stylesheet" href="styles.scss" />
+    <script
+      defer
+      src="https://unpkg.com/scrollreveal@4.0.0/dist/scrollreveal.min.js"
+    ></script>
+
+    <!-- Todo: remove the below script once you finish your portfolio -->
+    <script async defer src="https://buttons.github.io/buttons.js"></script>
+  </head>
+
+  <!-- Todo: read the following HTML Todos to create your stunning portfolio website -->
+  <body>
+    <div id="header">
+      <h1>K<span style="color:red;"> ! </span>B A</h1>
+      <ul class="list">
+        <li><a href="#hero">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </div>
+    <!-- **** Hero Section **** -->
+    <section id="hero" class="jumbotron">
+      <div class="container">
+        <img src="me.jpeg" height="200px" width="200px" alt="arnav.png">
+    
+        <h1 class="hero-title load-hidden">
+          Hi, my name is <span class="text-color-main"><br>Arnav</span>
+          <br />
+          I'm <span id="typewriter"></span>
+        </h1>
+        <p class="hero-cta load-hidden">
+          <a rel="noreferrer" class="cta-btn cta-btn--hero" href="#about"
+            >Know more</a>
+        </p>
+      </div>
+    </section>
+    <!-- /END Hero Section -->
+
+    <!-- **** About Section **** -->
+    <section id="about">
+      <div class="container">
+        <h2 class="section-title load-hidden">About me</h2>
+        <div class="row about-wrapper">
+          <div class="col-md-6 col-sm-12">
+            <div class="about-wrapper__image js-tilt load-hidden">
+              <img
+                alt="Profile Image"
+                class = "img-fluid rounded"
+                height="auto"
+                width="300px"
+                src="https://images-ext-1.discordapp.net/external/cccUHNpOVy7r_LSmpr7ZvR9MYvs4LY9w_u21dr33gtM/%3Fsize%3D4096/https/cdn.discordapp.com/avatars/769598708903051304/2223bbf6e68cc9334c20b3d4eeb17fac.png?width=358&height=358"
+                alt="Profile Image"
+              />
+            </div>
+          </div>
+          <div class="col-md-6 col-sm-12">
+            <div class="about-wrapper__info load-hidden">
+              <p class="about-wrapper__info-text">
+                Hello, I am <span>Arnav Chauhan</span> from <span>the National Capital Delhi.</span> 
+                <br>
+                I'm currently a student at IIT Bhilai pursuing my undergrad degree in Electrical Engineering.
+                <br>
+                I am quite fond of coding and I am fluent in multiple languages some being<span>   C++, Python and Javascript.</span>
+                I'm always interested in Building Web Dev and Python based projects.I have used frameworks like react, bootstrap and node js for Backend before.
+              </p>
+              <p class="about-wrapper__info-text">
+                Apart from my coding endeavors, <br>
+                <i class="fas fa-star" aria-hidden="true"></i>&nbsp;I enjoy playing esports<br>
+                    <i class="fas fa-star" aria-hidden="true"></i>&nbsp;I love watching anime and reading mangas<br>
+                    <i class="fas fa-star" aria-hidden="true"></i>&nbsp;Playing sports, especially badminton<br>
+                    <i class="fas fa-star" aria-hidden="true"></i>&nbsp;Hanging around on discord
+                
+              </p>
+              <span class="d-flex mt-3">
+                <a
+                  rel="noreferrer"
+                  target="_blank"
+                  class="cta-btn cta-btn--resume"
+                  href="assets/resume.pdf"
+                >
+                  View Resume
+                </a>
+              </span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- /END About Section -->
+
+    <!-- **** Projects Section **** -->
+    <section id="projects">
+      <div class="container">
+        <div class="project-wrapper">
+          <h2 class="section-title">Projects</h2><br><br><br><br>
+
+          <!-- Notice: each .row is a project -->
+          <div class="row">
+            <div class="col-lg-4 col-sm-12">
+              <div class="project-wrapper__text load-hidden">
+                <h3 class="project-wrapper__text-title">Discord Bot</h3>
+                <div>
+                  <p class="mb-4">
+                    The Python-based Pokemon Discord bot features a comprehensive set of commands, 
+                    allowing users to retrieve information about their favorite Pokemon, view their stats, and explore a vast Pokedex in real-time.
+                    Beyond its core functionality, the bot comes with an aesthetically pleasing interface .
+                    The Bot uses sqlite to store data of pokemons.
+                  </p>
+                </div>
+                <a
+                  rel="noreferrer"
+                  target="_blank"
+                  class="cta-btn text-color-main"
+                  href="https://github.com/kiba953/Pokemon-Bot"
+                >
+                  Source Code
+                </a>
+              </div>
+            </div>
+            <div class="col-lg-8 col-sm-12">
+              <div class="project-wrapper__image load-hidden">
+                <a rel="noreferrer" href="#!" target="_blank">
+                  <div
+                    data-tilt
+                    data-tilt-max="4"
+                    data-tilt-glare="true"
+                    data-tilt-max-glare="0.5"
+                    class="thumbnail rounded js-tilt"
+                  >
+                    <img
+                      alt="Project Image"
+                      class="img-fluid"
+                      src="./PokemonBot.png"
+                    />
+                  </div>
+                </a>
+              </div>
+            </div>
+          </div>
+          <!-- /END Project -->
+
+          <!-- Notice: each .row is a project -->
+          <div class="row">
+            <div class="col-lg-4 col-sm-12">
+              <div class="project-wrapper__text load-hidden">
+                <h3 class="project-wrapper__text-title">Wordle Clone</h3>
+                <div>
+                  <p class="mb-4">
+                    Introducing my custom Wordle game built with <strong>React</strong>! Enjoy the timeless word-guessing challenge with a sleek 
+                    and user-friendly interface. The React-powered on-screen keyboard makes guessing a breeze, while the 
+                    light and dark mode toggle ensures a comfortable experience in any setting. Immerse yourself in this 
+                    simplified and delightful Wordle game, designed to bring endless hours of entertainment and word-solving fun!
+                  </p>
+                </div>
+                <a
+                  rel="noreferrer"
+                  target="_blank"
+                  class="cta-btn cta-btn--hero"
+                  href="https://wordle-by-kiba.onrender.com/"
+                >
+                  See Live
+                </a>
+                <a
+                  rel="noreferrer"
+                  target="_blank"
+                  class="cta-btn text-color-main"
+                  href="https://github.com/kiba953/Wordle_Clone"
+                >
+                  Source Code
+                </a>
+              </div>
+            </div>
+            <div class="col-lg-8 col-sm-12">
+              <div class="project-wrapper__image load-hidden">
+                <a rel="noreferrer" href="#!" target="_blank">
+                  <div
+                    data-tilt
+                    data-tilt-max="4"
+                    data-tilt-glare="true"
+                    data-tilt-max-glare="0.5"
+                    class="thumbnail rounded js-tilt"
+                  >
+                    <img
+                      alt="Project Image"
+                      class="img-fluid"
+                      src="./wordle.png"
+                    />
+                  </div>
+                </a>
+              </div>
+            </div>
+          </div>
+          <!-- /END Project -->
+
+          <!-- Notice: each .row is a project -->
+          <div class="row">
+            <div class="col-lg-4 col-sm-12">
+              <div class="project-wrapper__text load-hidden">
+                <h3 class="project-wrapper__text-title">Project Title 2</h3>
+                <div>
+                  <p class="mb-4">
+                    If the project was collaborative, reflect it in this description, that will demonstrate communication and/or leadership skills. 
+                    Additionally, if you made use of the mastery of a second language, it will reflect on you professionalism.
+                  </p>
+                </div>
+                <a
+                  rel="noreferrer"
+                  target="_blank"
+                  class="cta-btn cta-btn--hero"
+                  href="#!"
+                >
+                  See Live
+                </a>
+                <a
+                  rel="noreferrer"
+                  target="_blank"
+                  class="cta-btn text-color-main"
+                  href="#!"
+                >
+                  Source Code
+                </a>
+              </div>
+            </div>
+            <div class="col-lg-8 col-sm-12">
+              <div class="project-wrapper__image load-hidden">
+                <a rel="noreferrer" href="#!" target="_blank">
+                  <div
+                    data-tilt
+                    data-tilt-max="4"
+                    data-tilt-glare="true"
+                    data-tilt-max-glare="0.5"
+                    class="thumbnail rounded js-tilt"
+                  >
+                    <img
+                      alt="Project Image"
+                      class="img-fluid"
+                      src="assets/project.jpg"
+                    />
+                  </div>
+                </a>
+              </div>
+            </div>
+          </div>
+          <!-- /END Project -->
+        </div>
+      </div>
+    </section>
+    <!-- /END Projects Section -->
+
+    <!-- **** About Se
+      ction **** -->
+    <section id="contact">
+      <div class="container">
+        <h2 class="section-title load-hidden">Contact me</h2>
+        <div class="row about-wrapper">
+          <div class="col-md-6 ">
+            <div class="about-wrapper__image load-hidden">
+              <div id="loclink">
+                <ul class="info">
+                  <li>
+                    <strong><i class="fas fa-map-marker-alt"></i> &nbsp;Address</strong><br>
+                    &nbsp;&nbsp;  Dwarka Sector 18B,<br>
+                    &nbsp;&nbsp; New Delhi, India
+                  </li>
+                  <li>
+                    <i class="fas fa-phone"></i> &nbsp;Phone Number<br>
+                    &nbsp;&nbsp; 706-044-XXXX
+                  </li>
+                  <li>
+                    <i class="fas fa-envelope"></i> &nbsp;Email<br>
+                    &nbsp;&nbsp; arnavchauhan@iitbhilai.ac.in
+                  </li>
+                </ul>
+                <ol class="links">
+                  <li><a href="https://www.linkedin.com/in/arnav-chauhan-492213234/" target="_blank"><i class="fab fa-linkedin"></i></a></li>
+                  <li><a href="https://discord.com/users/769598708903051304" target="_blank"><i class="fab fa-discord"></i></a></li>
+                  <li><a href="#" target="_blank"><i class="fab fa-whatsapp"></i></a></li>
+                  <li><a href="https://t.me/kiba0206" target="_blank"><i class="fab fa-telegram"></i></a></li>
+                </ol>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6 col-sm-12">
+            <div class="about-wrapper__info load-hidden">
+              <form action="mailto:homeruns306@gmail.com" method="post" enctype="text/plain">
+                <h2>Contact Form</h2>
+                <label for="name">Name</label>
+                <input type="text" name="name">
+                <label for="email">Email</label>
+                <input type="email" name="email">
+                <label for="message">Message</label><br>
+                <textarea name="message"></textarea>
+                <input type="submit" class="suba" value="Submit">
+            </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+
+
+
+    
+    <!-- **** Footer Section **** -->
+    <footer class="footer navbar-static-bottom">
+      <div class="container">
+        <a rel="noreferrer" href="#top" class="back-to-top">
+          <i class="fa fa-angle-up fa-2x" aria-hidden="true"></i>
+        </a>
+        <hr />
+
+        <!-- Notice: if you want to give me some credit, it will be huge for me! if not, put your data on it -->
+        <p class="footer__text">
+          © 2021 - Template developed by
+          <a rel="noreferrer" href="https://github.com/cobiwave" target="_blank"
+            >Jacobo Martínez</a
+          >
+        </p>
+
+        <!-- TO DO: remove this entire paragraph once you finish your portfolio -->
+        <p class="mt-3 pt-3">
+          <a
+            rel="noreferrer"
+            class="github-button"
+            href="https://github.com/cobiwave/simplefolio/fork"
+            data-icon="octicon-repo-forked"
+            data-size="large"
+            data-show-count="true"
+            aria-label="Fork ntkme/github-buttons on GitHub"
+            >Fork</a
+          >
+          <a
+            rel="noreferrer" 
+            class="github-button"
+            href="https://github.com/cobiwave/simplefolio"
+            data-icon="octicon-star"
+            data-size="large"
+            data-show-count="true"
+            aria-label="Star cobiwave/simplefolio on GitHub"
+            >Star</a
+          >
+        </p>
+      </div>
+    </footer>
+    <!-- /END Footer Section -->
+
+    <script defer type="module" src="index.js"></script>
+  </body>
+</html>
