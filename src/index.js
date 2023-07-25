@@ -62,3 +62,13 @@ initTiltEffect();
         ];
         const delay = 100;
         typeWriter("typewriter", words, delay);
+  document.addEventListener("DOMContentLoaded", function () {
+    const menuToggle = document.querySelector(".fa-bars");
+    const menuList = document.querySelector(".menu-toggle");
+
+    menuToggle.addEventListener("click", function () {
+      menuList.classList.toggle("active");
+    });
+  });
+
+  

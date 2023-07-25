@@ -46,7 +46,9 @@
     z-index: 10;
     background-color: #111;
   }
-  
+  .menu-toggle{
+    height: 100%;
+  }
   #header h1 {
     position:absolute;
     margin: 0;
@@ -61,7 +63,7 @@
     position: relative;
     color: white;
     text-align: center;
-    top: 35%;
+    top: 18%;
   }
   
   #header li {
@@ -90,32 +92,53 @@
   #header li:hover::after {
     transform: scaleX(1);
   }
-  /* Your existing header styles... */
 
+/* New styles for mobile and hamburger icon */
 @media screen and (max-width: 767px) {
-    /* Styles for phone mode */
-    #header .list {
-      display: flex;
-      justify-content: center;
-    }
-  
-    #header li {
-      display: inline-block;
-      margin-right: 0.5rem; /* Adjust the spacing between the dots */
-    }
-  
-    #header li:last-child {
-      margin-right: 0; /* Remove spacing for the last dot */
-    }
-  
-    #header li::after {
-      content: '.';
-      background-color: transparent;
-      color: white;
-      font-size: 2rem;
-    }
-  
-    #header li:hover::after {
-      transform: scaleX(1);
-    }
+  .menu-toggle {
+    text-align: right;
+    padding: 20px;
+    cursor: pointer;
+    display: block;
   }
+
+  .menu-toggle .fas {
+    font-size: 24px;
+    color: white;
+  }
+
+  .menu-toggle .list {
+    display: none;
+    position: absolute;
+    top: 100%;
+    right: 0;
+    background-color: #111;
+    border: 1px solid #fff;
+    border-radius: 4px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+
+  .menu-toggle .list li {
+    display: block;
+    margin-right: 0;
+  }
+
+  .menu-toggle .list li a {
+    display: block;
+    padding: 10px;
+    color: #fff;
+    text-decoration: none;
+    /* Add the hover effect */
+    transition: background-color 0.3s ease;
+  }
+
+  /* Change color on hover */
+  .menu-toggle .list li a:hover {
+    background-color: rgba(255, 255, 255, 0.1);
+  }
+
+  /* Show the menu when toggled */
+  .menu-toggle.active .list {
+    display: block;
+  }
+}
